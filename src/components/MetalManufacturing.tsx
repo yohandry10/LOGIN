@@ -5,7 +5,7 @@ export default function MetalManufacturing() {
   return (
     <section className="py-24 bg-gray-50 relative overflow-hidden">
       {/* Background elements */}
-      <div className="absolute top-10 left-10 w-64 h-64 bg-green-50 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+      <div className="absolute top-10 left-10 w-64 h-64 bg-[#f58634]/10 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
       <div className="absolute bottom-10 right-10 w-64 h-64 bg-blue-50 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -16,18 +16,18 @@ export default function MetalManufacturing() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-semibold tracking-wider mb-4">
+          <span className="inline-block px-3 py-1 bg-[#f58634]/10 text-[#f58634] rounded-full text-sm font-semibold tracking-wider mb-4">
             FABRICACIÓN ESPECIALIZADA
           </span>
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
             Fabricación de Metálica de Cubas, <br />
-            <span className="text-green-700">Tapa y Tanque Conservador</span>
+            <span className="text-[#f58634]">Tapa y Tanque Conservador</span>
           </h2>
           <p className="max-w-3xl mx-auto text-lg text-gray-600">
             Diseñamos y fabricamos componentes metálicos para transformadores de distribución con 
             los más altos estándares de calidad, durabilidad y precisión.
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-green-700 mx-auto my-8 rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#f58634] to-[#f58634]/80 mx-auto my-8 rounded-full"></div>
         </motion.div>
 
         {/* Main content with showcase */}
@@ -69,10 +69,10 @@ export default function MetalManufacturing() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="flex items-start gap-4 p-4 rounded-xl hover:bg-green-50/50 transition-colors"
+                  className="flex items-start gap-4 p-4 rounded-xl hover:bg-[#f58634]/5 transition-colors"
                 >
-                  <div className="bg-green-100 p-3 rounded-xl">
-                    <item.icon className="w-6 h-6 text-green-700" />
+                  <div className="bg-[#f58634]/10 p-3 rounded-xl">
+                    <item.icon className="w-6 h-6 text-[#f58634]" />
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900">{item.title}</h4>
@@ -85,7 +85,7 @@ export default function MetalManufacturing() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="mt-6 bg-gradient-to-r from-green-600 to-green-800 text-white py-3 px-8 rounded-lg font-medium flex items-center gap-2 shadow-lg shadow-green-500/30"
+              className="mt-6 bg-gradient-to-r from-[#f58634] to-[#f58634]/80 text-white py-3 px-8 rounded-lg font-medium flex items-center gap-2 shadow-lg shadow-[#f58634]/30"
             >
               Solicitar fabricación
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -168,7 +168,7 @@ export default function MetalManufacturing() {
           
           <div className="relative">
             {/* Connecting line */}
-            <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-green-200 transform -translate-x-1/2 hidden md:block"></div>
+            <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-[#f58634]/20 transform -translate-x-1/2 hidden md:block"></div>
             
             <div className="space-y-12">
               {[
@@ -203,12 +203,12 @@ export default function MetalManufacturing() {
                 >
                   <div className={`flex flex-col md:flex-row ${index % 2 === 0 ? '' : 'md:flex-row-reverse'} items-center gap-8`}>
                     <div className="md:w-1/2 flex justify-center">
-                      <div className="bg-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center border-4 border-green-100 z-10">
-                        <item.icon className="w-8 h-8 text-green-700" />
+                      <div className="bg-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center border-4 border-[#f58634]/10 z-10">
+                        <item.icon className="w-8 h-8 text-[#f58634]" />
                       </div>
                     </div>
                     <div className={`md:w-1/2 p-6 bg-white rounded-xl shadow-md border border-gray-100 ${index % 2 === 0 ? 'text-left' : 'text-right'}`}>
-                      <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full mb-2">Paso {index + 1}</span>
+                      <span className="inline-block bg-[#f58634]/10 text-[#f58634] text-xs font-semibold px-2.5 py-0.5 rounded-full mb-2">Paso {index + 1}</span>
                       <h4 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h4>
                       <p className="text-gray-600">{item.description}</p>
                     </div>
